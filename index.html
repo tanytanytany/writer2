@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Верстка «Writers2807»</title>
+</head>
+
+<body>
+	<div class="rootpage">
+		<h1>Верстка «Writers2807»</h1>
+		<div class="rootpage__info">Особенности проекта</div>
+		<h2>Готовые страницы:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html">Home</a></li>
+			<li><a target="_blank" href="service.html">Service</a></li>
+			<li><a target="_blank" href="blog.html">Blog</a></li>
+			<li><a target="_blank" href="article.html">Article</a></li>
+			<li><a target="_blank" href="price.html">Price</a></li>
+			<li><a target="_blank" href="about.html">About</a></li>
+			<li><a target="_blank" href="contacts.html">Contacts</a></li>
+		</ol>
+		<div class="rootpage__items">
+			<div class="rootpage__tnx">
+				<h2>Спасибо за заказ!</h2>
+				<div class="rootpage__body">
+					<p>Буду рад (а) хорошему отзыву.</p>
+					<p>Обращайтесь еще!</p>
+				</div>
+			</div>
+			<div class="rootpage__contacts">
+				<h2>Мои контакты:</h2>
+				<ul class="rootpage__body">
+					<li> <a href="mailto:tanytany0304@gmail.com">tanytany0304@gmail.com</a></li>
+					<li> <a href="tel:380506383528">+380 50 6383528 (Vodafone) </a></li>
+					<li> <a href="https://telegram.me/tany03040304" target="_blank" rel="nofollow">tany03040304 (Telegram)</a></li>
+				</ul>
+			</div>
+			</divrootpage__items>
+		</div>
+	</div>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #294788;
+		background-color: #fdfdfe;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: none;
+		font-size: 1.2rem;
+		font-weight: 400;
+		color: #272f07;
+	}
+
+	a:visited {}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.rootpage__items {
+		display: flex;
+		gap: 30px;
+	}
+
+	.rootpage {
+		padding: 100px 10px;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		text-align: center;
+		color: #2e519e;
+		font-size: 2rem;
+		margin: 0px 0px 3rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #2e519e;
+		font-size: 1.4rem;
+		margin: 0px 0px 1rem 0px;
+		line-height: 130%;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		font-weight: 600;
+		font-size: 28px;
+		line-height: 110%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 20px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		padding: 30px 40px;
+		line-height: 110%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		border: none;
+		flex: 0 0 50%;
+		display: flex;
+		flex-direction: column;
+		border-radius: 20px;
+		background: #8eadd0;
+	}
+
+	.rootpage__contacts a {
+		text-decoration: none;
+	}
+
+	.rootpage__contacts a span {
+		font-weight: 500;
+	}
+
+	.rootpage__tnx {
+		flex: 0 0 50%;
+		border: 3px solid #8eadd0;
+		color: #161d2b;
+		display: flex;
+		flex-direction: column;
+		border-radius: 20px;
+	}
+
+	.rootpage__tnx h2,
+	.rootpage__contacts h2 {
+		text-align: center;
+		color: #2e519e;
+	}
+
+	.rootpage__body {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		flex: 1 1 auto;
+	}
+
+	.rootpage__body li {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.rootpage__body a {
+		font-weight: 500;
+		font-size: 20px;
+		color: #fcfcfc;
+	}
+
+	.rootpage__body li::before {
+		display: block;
+		content: "";
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: #fcfcfc;
+	}
+
+	@media (max-width: 900px) {
+		.rootpage__items {
+			flex-direction: column;
+		}
+
+		.rootpage__contacts {}
+
+		.rootpage__tnx {}
+	}
+</style>
+
+</html>
